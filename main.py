@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+API:
+- POST /api/search -> Sucht nach Sentinel-2-Szenen
+- POST /api/preview -> Erstellt eine Vorschau für eine ausgewählte Szene
+- POST /api/timeseries -> Erstellt eine Zeitreihe für eine ausgewählte Szene
+- GET /r/<job_id>/overlay.png -> Ruft das Overlay-Bild für einen bestimmten Job ab
+- GET /r/<job_id>/index.tif -> Ruft die Index-GeoTIFF-Datei für einen bestimmten Job ab
+- GET /r/<job_id>/timeseries.csv -> Ruft die Zeitreihen-CSV-Datei für einen bestimmten Job ab
+- GET /r/<job_id>/timeseries.json -> Ruft die Zeitreihen-JSON-Datei für einen bestimmten Job ab
+- GET /healthz -> Überprüft den Zustand des Dienstes
+"""
 
 import csv
 import io
